@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="genericUtilities.ITestListenerUtility"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="IT"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="computers.DWS_Computers_05_Test">
+        <methods>
+          <include name="teardownTheBrowser"/>
+          <include name="logoutFromApplication"/>
+          <include name="loginToApplication"/>
+          <include name="Add_2_products_from_Computer_link_and_check_whether_the_product_is_being_added_to_compare_list"/>
+          <include name="launchingBrowserAndNavigateToApplication"/>
+        </methods>
+      </class> <!-- computers.DWS_Computers_05_Test -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
